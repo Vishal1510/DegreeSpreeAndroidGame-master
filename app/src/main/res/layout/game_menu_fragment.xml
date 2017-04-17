@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <com.jvn.degreespree.widgets.ScrollableRelativeLayout
+        android:layout_width="1000dp"
+        android:layout_height="550dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="230dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button android:id="@+id/move"
+                            android:layout_width="105dp"
+                            android:layout_height="40dp"
+                            android:text="Move"
+                            android:layout_gravity="left"
+                            android:textSize="12dp"/>
+
+                    <Button android:id="@+id/show_board"
+                            android:layout_width="105dp"
+                            android:layout_height="40dp"
+                            android:text="Show Board"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="left"
+                            android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <ListView
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:choiceMode="singleChoice"
+                    android:id="@+id/movable_locations"
+                    android:listSelector="@android:color/darker_gray"
+                    android:background="@drawable/text_box_border"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:orientation="horizontal">
+
+                    <Button android:id="@+id/draw_card"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:text="Draw Card"
+                        android:layout_gravity="left"
+                        android:textSize="12dp"/>
+
+                    <Button android:id="@+id/play_card"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Play Card"
+                        android:layout_gravity="left"
+                        android:textSize="12dp"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/card_view"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/text_box_border"
+                    android:layout_gravity="bottom"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score"
+                    android:layout_gravity="center"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/text_box_border">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:text="Name"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Learning"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Craft"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Integrity"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Quality Points"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"/>
+
+                    </TableRow>
+
+                    <com.jvn.degreespree.widgets.StatsRow
+                        android:id="@+id/player1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp">
+
+                    </com.jvn.degreespree.widgets.StatsRow>
+
+                    <com.jvn.degreespree.widgets.StatsRow
+                        android:id="@+id/player2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp">
+
+                    </com.jvn.degreespree.widgets.StatsRow>
+
+                    <com.jvn.degreespree.widgets.StatsRow
+                        android:id="@+id/player3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp">
+
+                    </com.jvn.degreespree.widgets.StatsRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp">
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deck Info"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+                    -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/text_box_border">
+
+                    <TextView
+
+                        android:text="Cards in deck: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/cards_in_deck"
+                        android:text="35"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:text="Discards out of play: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/cards_out_play"
+                        android:text=""
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/year"
+                        android:text=""
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player Info"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+                    -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/text_box_border">
+
+                    <TextView
+                        android:id="@+id/current_player"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Turn Info"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+
+                <ListView
+                    android:id="@+id/turns_info"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:choiceMode="none"
+                    android:listSelector="@android:color/transparent"
+                    android:background="@drawable/text_box_border"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.jvn.degreespree.widgets.ScrollableRelativeLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DegreeSpree</string>
+    <string name="game_name">Degree Spree</string>
+    <string-array name="difficulty_selector">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+    <string name="difficulty_prompt">Difficulty</string>
+    <string name="action_settings">Settings</string>
+</resources>

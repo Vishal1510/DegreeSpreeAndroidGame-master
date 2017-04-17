@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_border">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Reward"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/text_box_border"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points remaining:"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/points_remaining"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/learning_chooser">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learning:"
+                    android:textSize="24dp"/>
+
+                <TextView
+                    android:id="@+id/learning_points"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/learning_down"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/learning_up"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/craft_chooser">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Craft:"
+                    android:textSize="24dp"/>
+
+                <TextView
+                    android:id="@+id/craft_points"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/craft_down"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/craft_up"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/integrity_chooser">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Integrity:"
+                    android:textSize="24dp"/>
+
+                <TextView
+                    android:id="@+id/integrity_points"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/integrity_down"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/integrity_up"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:text="Ok"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    </LinearLayout>

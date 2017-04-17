@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="top"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <com.jvn.degreespree.widgets.ScrollableRelativeLayout
+            android:layout_width="1670dp"
+            android:layout_height="2000dp"
+            android:id="@+id/board"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/map"/>
+
+<!---
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/George_Allen_Field"
+                android:paddingTop="100px"
+                android:layout_width="400px"
+                android:layout_height="620px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Japanese_Garden"
+                android:layout_marginLeft="400px"
+                android:paddingTop="25px"
+                android:layout_width="500px"
+                android:layout_height="240px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Pyramid"
+                android:layout_marginLeft="400px"
+                android:layout_marginTop="250px"
+                android:paddingTop="25px"
+                android:layout_width="500px"
+                android:layout_height="240px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Parking"
+                android:layout_marginLeft="900px"
+                android:layout_marginTop="0px"
+                android:paddingTop="50px"
+                android:layout_width="700px"
+                android:layout_height="480px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Rec_Center"
+                android:layout_marginLeft="400px"
+                android:layout_marginTop="500px"
+                android:paddingTop="50px"
+                android:layout_width="580px"
+                android:layout_height="350px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Forbidden_Parking"
+                android:layout_marginLeft="1000px"
+                android:layout_marginTop="500px"
+                android:paddingTop="50px"
+                android:layout_width="660px"
+                android:layout_height="350px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/West_Walkway"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="620px"
+                android:paddingTop="50px"
+                android:layout_width="300px"
+                android:layout_height="850px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Computer_Lab"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="860px"
+                android:paddingTop="50px"
+                android:layout_width="400px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ECS_302"
+                android:layout_marginLeft="580px"
+                android:layout_marginTop="860px"
+                android:paddingTop="50px"
+                android:layout_width="400px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Eat_Club"
+                android:layout_marginLeft="1020px"
+                android:layout_marginTop="860px"
+                android:paddingTop="50px"
+                android:layout_width="220px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Conference_Room"
+                android:layout_marginLeft="1230px"
+                android:layout_marginTop="860px"
+                android:paddingTop="50px"
+                android:layout_width="220px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/North_Hall"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="1130px"
+                android:paddingTop="10px"
+                android:layout_width="650px"
+                android:layout_height="170px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/South_Hall"
+                android:layout_marginLeft="800px"
+                android:layout_marginTop="1130px"
+                android:paddingTop="10px"
+                android:layout_width="650px"
+                android:layout_height="170px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/East_Walkway"
+                android:layout_marginLeft="1440px"
+                android:layout_marginTop="900px"
+                android:paddingTop="10px"
+                android:layout_width="650px"
+                android:layout_height="170px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Room_Of_Retirement"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="1320px"
+                android:paddingTop="50px"
+                android:layout_width="400px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Elevators"
+                android:layout_marginLeft="580px"
+                android:layout_marginTop="1320px"
+                android:paddingTop="50px"
+                android:layout_width="220px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ECS_308"
+                android:layout_marginLeft="800px"
+                android:layout_marginTop="1320px"
+                android:paddingTop="50px"
+                android:layout_width="400px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Lactatioon_Lounge"
+                android:layout_marginLeft="1200px"
+                android:layout_marginTop="1320px"
+                android:paddingTop="50px"
+                android:layout_width="220px"
+                android:layout_height="270px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Library"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="1600px"
+                android:paddingTop="50px"
+                android:layout_width="450px"
+                android:layout_height="500px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/LA5"
+                android:layout_marginLeft="450px"
+                android:layout_marginTop="1600px"
+                android:paddingTop="50px"
+                android:layout_width="550px"
+                android:layout_height="400px">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/BratWurst_Hall"
+                android:layout_marginLeft="1000px"
+                android:layout_marginTop="1600px"
+                android:paddingTop="50px"
+                android:layout_width="650px"
+                android:layout_height="400px">
+
+            </LinearLayout>
+
+            -->
+
+
+        </com.jvn.degreespree.widgets.ScrollableRelativeLayout>
+
+        <Button android:id="@+id/player_menu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Menu"
+                android:layout_gravity="bottom|right"
+                android:background="@android:drawable/btn_default"
+                android:enabled="true"
+                android:textSize="20dp"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
